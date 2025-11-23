@@ -1,0 +1,329 @@
+.home-page .content-section {
+  margin-bottom: 60px;
+}
+.home-block-1 {
+  min-height: 615px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.home-block-1 img,
+.home-block-1:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.home-block-1:after {
+  content: "";
+  display: block;
+  z-index: -1;
+  background-color: #000;
+  opacity: 65%;
+}
+
+.home-block-1 .content-inner {
+  max-width: 87%;
+}
+
+.home-block-1 .btitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+.home-block-1 .block-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.home-block-1 .block-buttons {
+  margin-top: 48px;
+}
+.home-block-1 .block-buttons .button + .button {
+  margin-left: 24px;
+}
+
+/* brands carousel */
+.brands-section > .row {
+  align-items: center;
+}
+.brands-carousel {
+  display: flex;
+}
+.brands-carousel .slick-list {
+  margin: 0 -16px;
+}
+.brands-carousel .slick-slide {
+  text-align: center;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.brands-carousel a img {
+  transition: 0.3s;
+  filter: grayscale(1);
+  max-width: 100%;
+  height: auto;
+}
+.brands-carousel a:hover img {
+  filter: grayscale(0);
+}
+
+.adv-section .btitle {
+  margin-bottom: 32px;
+}
+
+.adv-row {
+  margin-bottom: -32px;
+}
+
+.adv-row .col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.adv-row .item {
+  position: relative;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.adv-row .item .number {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #ebebeb;
+  font-size: 118px;
+  line-height: 48px;
+}
+
+.adv-row .item .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.adv-row .item .text {
+  color: var(--gray-color);
+}
+
+.advantages {
+  display: flex;
+  text-align: center;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-bottom: 56px;
+}
+
+.advantages .item {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.advantages .item-inner {
+  border-radius: 8px;
+  padding: 32px;
+  background-color: #ebebeb;
+}
+.advantages .item .icon {
+  padding: 22px;
+  margin: 0 0 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages .item .title {
+  font-weight: 600;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+.advantages .item .icon img {
+  max-height: 166px;
+  width: auto;
+}
+.advantages .item .color-accent {
+  display: inline-block;
+  margin: 7px auto;
+  font-size: 64px;
+}
+.advantages .item .text {
+  font-size: 18px;
+  color: var(--gray-color);
+}
+.advantages .slick-arrow {
+  border: 0px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  bottom: -12px;
+}
+.advantages .slick-arrow:hover {
+  background: none;
+}
+.advantages .slick-arrow .ic {
+  width: 45px;
+  height: 24px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+.advantages .slick-arrow:hover .ic {
+  background-color: var(--accent-color);
+}
+.advantages .slick-arrow.slick-prev {
+  left: 50%;
+  right: inherit;
+  margin-left: -65px;
+}
+.advantages .slick-arrow.slick-next {
+  right: 50%;
+  left: inherit;
+  margin-right: -65px;
+}
+.chess-list .item .item-content .title {
+  font-size: 36px;
+}
+.chess-list .item .item-content .title,
+.chess-list .item .item-content .text {
+  max-width: 390px;
+}
+
+.chess-list .item a.link {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  margin-top: 16px;
+  position: relative;
+  padding-right: 24px;
+}
+.chess-list .item a.link:after {
+  content: "";
+  display: inline-block;
+  margin: 0;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: 0.3s;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  margin-top: -4.5px;
+  z-index: 2;
+  width: 18px;
+  height: 9px;
+  background-color: currentColor;
+  -webkit-mask-image: url(../img/ic-button-arrow.svg);
+  mask-image: url(../img/ic-button-arrow.svg);
+}
+@media (min-width: 991px) {
+  .brands-section .btitle {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .chess-list .item .item-content .title,
+  .chess-list .item .item-content .text {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .adv-row {
+    border: none;
+    margin-bottom: -32px;
+  }
+  .adv-row .col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-bottom: 32px;
+  }
+  .home-block-1,
+  .adv-section .btitle {
+    text-align: center;
+  }
+  .brands-section .col-3 {
+    text-align: center;
+  }
+  .brands-section .col-3,
+  .brands-section .col-9 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-page .content-section {
+    margin-bottom: 48px;
+  }
+  .adv-row .item .number {
+    font-size: 96px;
+    line-height: 35px;
+  }
+  .adv-row .item {
+    padding-top: 18px;
+  }
+
+  .adv-row .item .title {
+    margin-bottom: 16px;
+  }
+
+  .home-block-1 {
+    min-height: 100vh;
+    height: -webkit-fill-available;
+    padding: 16px;
+  }
+  .home-block-1 .btitle {
+    font-size: 35px;
+    margin-bottom: 16px;
+  }
+  .home-block-1 .block-text {
+    font-size: 16px;
+  }
+  .home-block-1 .block-buttons {
+    margin: 16px 0 0;
+  }
+  .home-block-1 .block-buttons a {
+    margin: 16px 0 0 !important;
+    width: 100%;
+  }
+  .advantages .item .icon {
+    padding: 12px;
+  }
+  .advantages .item .icon img {
+    max-height: 120px;
+  }
+  .advantages .item .color-accent {
+    font-size: 48px;
+  }
+  .advantages .item .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .adv-section .item .text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,238 @@
+.contact-section .col-form {
+  -ms-flex: 0 0 54.3%;
+  flex: 0 0 54.3%;
+  max-width: 54.3%;
+}
+.contact-section .col-contact {
+  padding-left: 37px;
+  -ms-flex: 0 0 45.7%;
+  flex: 0 0 45.7%;
+  max-width: 45.7%;
+}
+.contact-section .col-form .col-inner {
+  background: #ebebeb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.contact-section .col-form .btitle {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.contact-section .col-contact {
+  padding-left: 32px;
+}
+
+.contact-section .col-contact .btitle {
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.contact-section .contact-blocks {
+  position: relative;
+}
+.contact-section .call-avatar {
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.contact-section .icon-contact-block {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  border: 0px;
+  box-sizing: border-box;
+  position: absolute;
+  background: url(../img/icon-contact-block.jpg) no-repeat center center;
+  background-size: 60px auto;
+  border-radius: 50%;
+}
+
+.contact-section .call-avatar .ring {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  animation: ringPulse 1.5s infinite;
+}
+
+.contact-section .call-avatar .ring1 {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 168, 114, 0.7) 0%,
+    rgba(251, 186, 0, 0.7) 100%
+  );
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+  animation-delay: 0s;
+}
+
+.contact-section .call-avatar .ring2 {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 168, 114, 0.33) 0%,
+    rgba(251, 186, 0, 0.33) 100%
+  );
+  animation-delay: 0.4s;
+}
+
+.contact-section .call-avatar .ring3 {
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 168, 114, 0.1) 0%,
+    rgba(251, 186, 0, 0.1) 100%
+  );
+  animation-delay: 0.8s;
+}
+
+@keyframes ringPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.contact-section .contact-blocks .item {
+  border-bottom: 1px solid rgba(29, 29, 29, 0.15);
+  padding: 32px 0;
+}
+.contact-section .contact-blocks > .item.item-type-phone,
+.contact-section .contact-blocks > .item.item-type-text {
+  border-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.contact-section .contact-blocks .item .item-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact-section .contact-blocks .item-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid var(--main-color);
+  padding: 7px;
+}
+.contact-section .contact-blocks .item-icon .ic {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+}
+.contact-section .contact-blocks .item.item-type-phone .item-icon {
+  padding: 8px;
+}
+
+.contact-section .contact-blocks .item .item-text {
+  font-weight: bold;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+.contact-section .contact-blocks .item.item-type-phone .item-text {
+  display: flex;
+}
+.contact-section
+  .contact-blocks
+  .item.item-type-phone
+  .item-text
+  > div
+  + div:before {
+  content: "/";
+  color: #d9d9d9;
+  display: inline-block;
+  margin: 0 16px;
+}
+.contact-section .contact-blocks .item.item-type-email .item-text > div + div {
+  margin-top: 8px;
+}
+
+.contact-section .contact-blocks .item .item-text a:not(:hover) {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1349px) {
+  .contact-section .col-contact {
+    padding-left: 16px;
+  }
+  .contact-section .contact-blocks .item.item-type-phone .item-text {
+    flex-direction: column;
+  }
+  .contact-section
+    .contact-blocks
+    .item.item-type-phone
+    .item-text
+    > div
+    + div:before {
+    display: none;
+  }
+  .contact-section .call-avatar {
+    top: 65px;
+  }
+  .contact-section .col-form .row .col-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .col-form,
+  .contact-section .col-contact {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-section .col-form {
+    margin-bottom: 48px;
+  }
+
+  .contact-section .col-form .col-inner {
+    border-radius: 0;
+    padding: 24px 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}

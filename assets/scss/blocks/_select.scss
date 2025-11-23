@@ -1,0 +1,72 @@
+/* select */
+.custom-select {
+    position: relative;
+
+    & select {
+        display: none;
+    }
+
+    .select-selected {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-width: 150px;
+        height: 36px;
+        padding-inline: 12px 24px;
+        border: 1px solid #8239eb;
+        border-radius: 5px;
+        cursor: pointer;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            translate: 0 -50%;
+            width: 24px;
+            height: 24px;
+            background: url(../images/icons/arrow-down-gray.svg) no-repeat center/cover;
+            pointer-events: none;
+            transition: rotate 0.3s ease;
+        }
+
+        &.select-arrow-active:after {
+            rotate: 180deg;
+        }
+    }
+
+    .select-items {
+        min-width: max-content;
+        position: absolute;
+        top: 105%;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &>li {
+            padding: 8px 12px;
+            cursor: pointer;
+
+            &.same-as-selected {
+                color: #fff;
+                background-color: #8239eb;
+            }
+
+            @include hover {
+                color: #fff;
+                background-color: #8239eb;
+            }
+        }
+    }
+
+    .select-hide {
+        display: none;
+    }
+}
+
+/* select */

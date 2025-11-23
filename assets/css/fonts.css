@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.eot");
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Light.woff") format("woff"),
+    url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"),
+    url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+/*
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.eot');
+	src: local('Montserrat Light'), local('Montserrat-Light'),
+		url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Light.woff') format('woff'),
+		url('../fonts/Montserrat-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+*/
+@font-face {
+  font-family: "Klarna Display";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("KlarnaDisplay-Bold.woff2") format("woff2"),
+    url("KlarnaDisplay-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Display";
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url("KlarnaDisplay-BoldItalic.woff2") format("woff2"),
+    url("KlarnaDisplay-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Headline";
+  font-display: swap;
+  font-weight: 700;
+  src: url("KlarnaHeadline-Bold.woff2") format("woff2"),
+    url("KlarnaHeadline-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Headline";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+  src: url("KlarnaHeadline-Bolditalic.woff2") format("woff2"),
+    url("KlarnaHeadline-Bolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Headline";
+  font-display: swap;
+  font-weight: 300;
+  src: url("KlarnaHeadline-Light.woff2") format("woff2"),
+    url("KlarnaHeadline-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Headline";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+  src: url("KlarnaHeadline-LightItalic.woff2") format("woff2"),
+    url("KlarnaHeadline-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans Bold";
+  font-display: swap;
+  src: url("KlarnaSans-Bold.woff2") format("woff2"),
+    url("KlarnaSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans Bold Italic";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+  src: url("KlarnaSans-BoldItalic.woff2") format("woff2"),
+    url("KlarnaSans-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-weight: 300;
+  src: url("KlarnaSans-Light.woff2") format("woff2"),
+    url("KlarnaSans-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+  src: url("KlarnaSans-LightItalic.woff2") format("woff2"),
+    url("KlarnaSans-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-weight: 500;
+  src: url("KlarnaSans-Medium.woff2") format("woff2"),
+    url("KlarnaSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+  src: url("KlarnaSans-MediumItalic.woff2") format("woff2"),
+    url("KlarnaSans-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-weight: 400;
+  src: url("KlarnaSans-Regular.woff2") format("woff2"),
+    url("KlarnaSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Sans";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  src: url("KlarnaSans-RegularItalic.woff2") format("woff2"),
+    url("KlarnaSans-RegularItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text Mono";
+  font-display: swap;
+  font-weight: 500;
+  src: url("KlarnaTextMono-Medium.woff2") format("woff2"),
+    url("KlarnaTextMono-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text Mono";
+  font-display: swap;
+  font-weight: 400;
+  src: url("KlarnaTextMono-Regular.woff2") format("woff2"),
+    url("KlarnaTextMono-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 400;
+  src: url("KlarnaText-Regular.woff2") format("woff2"),
+    url("KlarnaText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 500;
+  src: url("KlarnaText-Medium.woff2") format("woff2"),
+    url("KlarnaText-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 700;
+  src: url("KlarnaText-Bold.woff2") format("woff2"),
+    url("KlarnaText-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url("KlarnaText-Italic.woff2") format("woff2"),
+    url("KlarnaText-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+  src: url("KlarnaText-MediumItalic.woff2") format("woff2"),
+    url("KlarnaText-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Klarna Text";
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url("KlarnaText-BoldItalic.woff2") format("woff2"),
+    url("KlarnaText-BoldItalic.woff") format("woff");
+}

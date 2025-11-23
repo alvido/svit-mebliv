@@ -1,0 +1,116 @@
+.vacancy-top{
+    padding: 24px;
+    border:1px solid #ececec;
+	border-radius:12px;
+}
+
+.vacancy-top p img{border-radius:12px;}
+.vacancy-top:after{
+	content:"";
+	display:table;
+	width:100%;
+	clear:both;
+}
+
+.vacancy-head{
+	margin-bottom:16px;
+	justify-content:space-between;
+	 font-size: 18px;
+}
+.vacancy-head > div{
+	padding-left:16px;
+	padding-right:16px;
+	margin-bottom:16px;
+}
+
+.vacancy-head .v-title{
+	    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.vacancy-list .vacancy-salary{
+	margin-left: auto;
+	padding-left:24px;
+    margin-right: 24px;
+}
+
+#vacancy-popup .wpcf7 label{
+	margin:0;
+	font-size:16px;
+}
+
+.form-group.form-toplabel {
+  position: relative;
+}
+
+.form-group.form-toplabel > label {
+  position: absolute;
+  top: 14px;     
+  left: 14px; 
+  font: 400 14px/1.25 'Roboto', sans-serif !important;
+  margin:0;
+  background:#fff;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  color: var(--gray-color);
+}
+.form-group.form-toplabel:focus-within > label,
+.form-group.form-toplabel:focus-within > label,
+.form-group.form-toplabel.is-filled > label {
+  top: -8px;
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+#vacancy-popup .qbutton{
+	font-size:85%;
+	padding: 8px 16px;
+}
+
+#vacancy-popup hr{
+	background: transparent;
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid #ddd;
+    margin: 24px 0 16px;
+}
+
+a.mfcf7_zl_delete_file{
+	text-decoration:none;
+}
+
+#vacancy-popup .form-group .wpcf7-radio{
+	display:flex;
+	margin:0 -8px -8px;
+}
+
+
+#vacancy-popup .form-group .wpcf7-radio label{
+	margin:0;
+	font-weight:normal;
+	padding:8px;}
+	
+#vacancy-popup .form-group .wpcf7-radio input{
+	margin:0 3px 0 0;
+}
+
+@media (max-width:767px){
+	.vacancy-top{
+		    padding: 24px 16px;
+			border-left:0px;
+			border-right:0px;
+    border-radius: 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: unset;
+	}
+	
+	.vacancy-top p img{
+		float:none !important;
+		margin:0 0 24px !important;
+		width:100%;
+	}
+	.form-group.form-toplabel > label{
+		font-size:16px !important;
+	}
+}

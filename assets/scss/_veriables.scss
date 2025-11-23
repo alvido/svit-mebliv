@@ -1,0 +1,41 @@
+//width main container
+$container: 1320;
+
+:root {
+
+    /*colors*/
+    --main-color: #151515;
+    --gray-color: #75807e;
+    --accent-color: #fbba00;
+    --light-color: #ffffff;
+
+
+
+    --color-transparent: transparent;
+    --color-shadow: rgba(22, 28, 45, 0.05);
+    /*colors*/
+
+    /*border*/
+    --border: 2px solid var(--color-black);
+    --border-radius: 16px;
+    --border-radius-small: 8px;
+    --border-radius-large: 32px;
+    /*border*/
+
+    /*body*/
+    --font-family-base: "Gilroy", serif;
+
+    --container-width: #{$container}px;
+    --container-padding-x: clamp(1.25rem, -5.519rem + 10.58vw, 4rem);
+
+    --section-padding-y: clamp(3rem, 1.195rem + 7.7vw, 8.125rem);
+    /*body*/
+
+    /*button*/
+    --input-height: 56px;
+    --button-height: 56px;
+    --icon-button-height: 30px;
+
+    --transition-duration: 0.3s;
+    /*button*/
+}

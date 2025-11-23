@@ -1,0 +1,82 @@
+.gmap,
+#global-map-area{
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	position:relative;
+	overflow:hidden;
+	border-radius:12px;
+}
+.gmap iframe,
+#global-map-area iframe{
+	width:100%;
+	height:330px;
+	border-radius:12px;
+}
+
+#global-map-area:not(:empty){
+	margin-top:48px;
+}
+
+.address-filter .btitle{
+	font-weight:bold;
+	margin-bottom:1rem;
+	line-height:1;
+}
+
+.address-filter .btitle + p{
+	margin-bottom:1rem;
+}
+#address-posts{
+	margin-bottom:-16px;
+}
+.store-item{
+	font-size:14px;
+	color:var(--gray-color);
+	margin-bottom:24px;
+}
+.store-item .store-name{
+	color:var(--main-color);
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:4px;
+}
+
+.store-item .store-text{
+	margin-top:4px;
+}
+
+.store-item p{
+	margin:0;
+}
+
+@media screen and (max-width: 1199px) {
+	#address-filter .row > .col-3{
+		-ms-flex: 0 0 33.333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#address-filter .row > .col-3{
+		-ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+	}
+	
+	#address-filter .row.address-filter > .col-3:first-child{
+		-ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#address-filter .row > .col-3{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}

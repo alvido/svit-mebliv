@@ -1,0 +1,107 @@
+:root {
+  /*colors*/
+  --main-color: #151515;
+  --gray-color: #75807e;
+  --accent-color: #fbba00;
+  --light-color: #ffffff;
+  --color-transparent: transparent;
+  --color-shadow: rgba(22, 28, 45, 0.05);
+  /*colors*/
+  /*border*/
+  --border: 2px solid var(--color-black);
+  --border-radius: 16px;
+  --border-radius-small: 8px;
+  --border-radius-large: 32px;
+  /*border*/
+  /*body*/
+  --font-family-base: "Gilroy", serif;
+  --container-width: 1320px;
+  --container-padding-x: clamp(1.25rem, -5.519rem + 10.58vw, 4rem);
+  --section-padding-y: clamp(3rem, 1.195rem + 7.7vw, 8.125rem);
+  /*body*/
+  /*button*/
+  --input-height: 56px;
+  --button-height: 56px;
+  --icon-button-height: 30px;
+  --transition-duration: 0.3s;
+  /*button*/
+}
+
+/* select */
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  display: none;
+}
+.custom-select .select-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-width: 150px;
+  height: 36px;
+  padding-inline: 12px 24px;
+  border: 1px solid #8239eb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.custom-select .select-selected::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons/arrow-down-gray.svg) no-repeat center/cover;
+  pointer-events: none;
+  -webkit-transition: rotate 0.3s ease;
+  transition: rotate 0.3s ease;
+}
+.custom-select .select-selected.select-arrow-active:after {
+  rotate: 180deg;
+}
+.custom-select .select-items {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.custom-select .select-items > li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.custom-select .select-items > li.same-as-selected {
+  color: #fff;
+  background-color: #8239eb;
+}
+@media (hover: hover) {
+  .custom-select .select-items > li:hover {
+    color: #fff;
+    background-color: #8239eb;
+  }
+}
+@media (hover: none) {
+  .custom-select .select-items > li:active {
+    color: #fff;
+    background-color: #8239eb;
+  }
+}
+.custom-select .select-hide {
+  display: none;
+}
+
+/* select *//*# sourceMappingURL=style.css.map */
